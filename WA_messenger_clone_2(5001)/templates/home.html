@@ -1,0 +1,165 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatsapp_clone</title>
+    <link rel="stylesheet" href="/static/home.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body>   
+
+    <div  class="nav">
+        <div class="top-nav-left">
+        <img  class="dp" src="/static/pictures/sergio.jpg" alt=""><br>
+        <h1>
+        <iconify-icon icon="el:group"></iconify-icon>&nbsp;&nbsp;
+        <iconify-icon icon="pajamas:status"></iconify-icon>&nbsp;&nbsp;
+        <iconify-icon icon="majesticons:chat-status-line"></iconify-icon>&nbsp;&nbsp;
+        <iconify-icon icon="ri:chat-new-fill"></iconify-icon>&nbsp;&nbsp;
+        <iconify-icon icon="iconamoon:search-thin">
+        <iconify-icon icon="pepicons-pop:dots-y"></iconify-icon></h1>
+        </div>
+
+        <div class="top-nav-right">
+            <img  class="dp" src="/static/pictures/spiderman.jpg" alt="">
+            <span>
+                
+                <h2>jefin</h2>
+                <p class="h1" >Online</p>
+            </span>
+            <h1>
+                <iconify-icon icon="iconamoon:search-thin"></iconify-icon>&nbsp;&nbsp;&nbsp;
+                <iconify-icon icon="ic:baseline-phone"></iconify-icon>&nbsp;&nbsp;
+                <iconify-icon icon="mdi:video"></iconify-icon>&nbsp;&nbsp;
+                <iconify-icon icon="pepicons-pop:dots-y"></iconify-icon></h1>
+       </div>
+    </div>
+
+
+<section> 
+    
+    <div class="container1">
+        <div   class="contactlist">
+            <img   class="contact-dp"  src="/static/pictures/spiderman.jpg" alt="">
+            <span>
+                <br>
+                <h3>jefin</h3>
+                <p  class="h1">Typing....</p>
+                <br>
+            </span>
+            <small   class="h1">  <b>Online</b> </small>
+        </div>
+        <div   class="contactlist">
+            <img   class="contact-dp"  src="/static/pictures/believe.jpg" alt="">
+            <span>
+                <br>
+                <h3>baasha</h3>
+                <p  class="h2">no worriies</p>
+                <br>
+            </span><iconify-icon icon="charm:tick-double" style="color: blue;" width="19" height="19"></iconify-icon>
+            <small  class="h2">9.00am</small>
+        </div>
+        <div   class="contactlist">
+            <img   class="contact-dp"  src="/static/pictures/butter.jpg" alt="">
+            <span>
+                <br>
+                <h3>baanu</h3>
+                <p  class="h2">ok bye!</p>
+                <br>
+            </span><iconify-icon icon="charm:tick-double" style="color: blue;" width="19" height="19"></iconify-icon>
+            <small  class="h2">01.00 pm</small>
+        </div>
+        <div   class="contactlist">
+            <img   class="contact-dp"  src="/static/pictures/nodp.jpg" alt="">
+            <span>
+                <br>
+                <h3>shahul</h3>
+                <p  class="h2">Well said 💫</p>
+                <br>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <small  class="h2">8.00 am</small>
+        </div>
+        <div   class="contactlist">
+            <img   class="contact-dp"  src="/static/pictures/rock.jpg" alt="">
+            <span>
+                <br>
+                <h3>Arun</h3>
+                <p  class="h2">good mornig 💫!! </p>
+                <br>
+            </span><iconify-icon icon="charm:tick-double" style="color: blue;" width="19" height="19"></iconify-icon>
+            <small  class="h2">1.00 pm</small>
+        </div>
+        <div   class="contactlist">
+            <img   class="contact-dp"  src="/static/pictures/s.jpg" alt="">
+            <span>
+                <br>
+                <h3>ravi</h3>
+                <p  class="h2">sur</p>
+                <br>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <small  class="h2">4.00 am</small>
+        </div>
+        <div   class="contactlist">
+            <img   class="contact-dp"  src="/static/pictures/tiger.jpg" alt="">
+            <span>
+                <br>
+                <h3>dhas</h3>
+                <p  class="h2">ha haa!</p>
+                <br>
+            </span>
+            <small  class="h2">5.00 pm</small>
+        </div>
+       </div>
+        
+        <div class="container2">
+            <p  class="today">  Today   </p>
+            {%for i in data%}
+              
+            {%if i.name == 'jefin'%}
+            
+            <p  class="receiver"> 
+                <small>
+            <iconify-icon icon="iconoir:nav-arrow-down"></iconify-icon></a>&nbsp;{{i.msg}} &nbsp;&nbsp;&nbsp;&nbsp; </small>  
+        </p>
+            {%elif i.name == 'selva'%}
+              
+            <p  class="sender">
+                <button  class="hover-btn-sender" > 
+                <a class="del"  href="{{url_for('delete',id=loop.index)}}">delete</a>
+                </button>
+                <button  class="hover-btn-sender" > 
+                <a class="edit"   href="{{url_for('edit',id=loop.index)}}">edit</a>
+                </button>
+            <small   class="smalll">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{i.msg}} &nbsp;
+                 <iconify-icon icon="charm:tick-double" style="color: gray;"></iconify-icon>
+                <iconify-icon icon="iconoir:nav-arrow-down"></iconify-icon></small> </p>
+            {%endif%}
+            {%endfor%}
+             
+        </div>  
+</section>
+<div  class="foot">
+    <div class="top-nav-left">
+
+    <h1><iconify-icon icon="logos:whatsapp-icon"></iconify-icon>
+      <small ><small> Get whatsapp for windows</small></small> </h1>
+    </div>
+    <div class="top-nav-right">
+        <h1>
+            <iconify-icon icon="ph:plus-light"></iconify-icon>
+          </h1>
+          <form method="post">
+            <h1  ><iconify-icon icon="pajamas:smile"></iconify-icon></h1>
+            
+            <input type="text"   placeholder="Type  a  message" name="msg">
+            <button class="h1"><iconify-icon icon="cib:telegram-plane"></iconify-icon></button>
+        </form>
+   </div>
+</div>
+
+
+</body>
+</html>
+
+
+

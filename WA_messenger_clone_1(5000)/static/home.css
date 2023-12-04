@@ -1,0 +1,256 @@
+*{  font-family: sans-serif;
+    margin: 0;
+}
+section{
+    padding-top:10vh ;
+    display: flex;
+}
+.container1{
+    width:30%;
+    aspect-ratio: 2/1;
+    padding: 40px 0;
+    margin: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 67vh;
+} 
+.search-bar{
+    display: inline;
+    margin-top: 10%;
+}
+.container2{
+    border-left: none;
+    width:71%;
+    aspect-ratio: 2/1;
+    padding: 40px 0;
+    margin: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 67vh;
+} 
+
+.nav{
+    box-shadow:0px 0px 5px;
+    align-items: center;
+    display: flex;
+    width:100%;
+    height: 10%;
+    background-color:#25D366;
+    position:absolute;
+}
+.foot{
+    box-shadow:0px 0px 2px  ;
+    align-items: center;
+    display: flex;
+    width:100%;
+    height: 10%;
+    background-color:#25D366;
+    position:absolute;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.foot    .top-nav-left{
+    display: flex;
+    justify-content: space-between;
+    width: 25.8%;
+    border-right: 0.1mm solid gray;
+    padding: 0.4%;
+    box-shadow:0px 0px 1px;
+}
+.foot    .top-nav-right{
+    width: 68%;
+    justify-content: space-evenly;
+}
+.top-nav-left{
+    box-shadow:0px 0px 1px;
+    display: flex;
+    justify-content: space-between;
+    width: 39.3%;
+    border-right: 0.1mm solid gray;
+    padding: 0.2%;
+}
+.top-nav-left  h1{
+    padding-top: 2%;
+    color: #075E54;
+}
+
+.top-nav-right  h1,.h1{
+    padding-top: 1.2%;
+    color: #075E54;
+}
+.top-nav-left  .dp{
+    height:15%;
+    width: 15%;
+    border-radius: 50%;
+    margin-left: 2%;
+    box-shadow: 0px 0px 3px;
+}
+.top-nav-right  .dp{
+    box-shadow: 0px 0px 3px;
+    margin-left: 2%;
+    height:6%;
+    width: 6%;
+    border-radius: 50%;
+}
+.top-nav-right{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.top-nav-right    form   button{
+    height: 100%;
+    width: 7%;
+    border: none;
+    font-size: xx-large;
+    background-color: white;
+}    
+.top-nav-right    form {
+    justify-content: space-evenly;
+    display: flex;
+} 
+.foot    .top-nav-right  h1{
+    padding-bottom: 1%;
+}
+.foot    .top-nav-right   form   input{
+    border: none;
+    width: 78%;
+    height: auto;
+   font-size: larger;
+}
+.foot    .top-nav-right   form{
+    border-radius: 20px;
+    background-color: white;
+   width: 100%;
+}
+section  .search{
+    height: 10%;
+}
+.container1   div   .contact-dp{
+    box-shadow: 0px 0px 2px ;
+    height: 70%;
+    width:auto ;
+    border-radius: 50%;
+    margin-left:5%;
+}
+.container1   div{
+    display: flex;
+}
+.container1   div   span{
+    width: 45%;
+   margin-left:4% ;
+}
+.h2{
+    color: rgb(163, 163, 163);
+}
+.container1   :nth-child(1){
+    width: 100%;
+    background-color:#dee6e1;
+}
+.contactlist{
+    margin: 2%;
+    align-items: center;
+    box-shadow: 0px 1px 1.5px  #25D366;
+    display: flex;
+    margin-top:2%;
+    height: 16%;
+}
+.contactlist   span{
+    padding: 2%;
+    width: 80%;    
+}
+.contactlist   small{
+    margin-left: 7%;
+}
+.container2{
+    background-image: url(/static/pictures/theme-whatsapp.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    z-index: 2;
+}
+.container2   .receiver   small{
+    border-top-left-radius:4px ;
+    border-top-right-radius:28px ;
+    border-bottom-right-radius:4px ;
+    border-bottom-left-radius:4px ;
+    padding: 0.4%;
+    font-size: large;
+    background-color: white;
+    box-shadow: 0px 0px 10px ;
+}
+.container2   .sender   small{
+    border-top-right-radius:4px ;
+    border-top-left-radius:28px ;
+    border-bottom-right-radius:4px ;
+    border-bottom-left-radius:4px ;
+    font-size: large;
+    background-color: aquamarine;
+    box-shadow: 0px 0px 10px ;
+    box-shadow: 0px 0px 10px ;
+} 
+.container2    .today{
+    margin-left: 31%;
+    padding: 0.1%;
+    border-radius:4px ;
+    font-size: large;
+    background-color:#00f8ff;
+    box-shadow: 0px 0px 10px ;
+    box-shadow: 0px 0px 10px ;
+    position: absolute;
+}
+.container2   .sender{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: large;
+    justify-content: flex-end;
+    margin-left:48%;
+    margin-top: 1%;
+    padding: 0.5%;
+    width: 50%;
+    border-top-right-radius:4px ;
+    border-top-left-radius:28px ;
+    border-bottom-right-radius:4px ;
+    border-bottom-left-radius:4px ;
+
+}
+.container2    .receiver{
+    width: 50%;
+    font-size: large;
+    margin-left:1%;
+    margin-top: 1%;
+    padding:0.5%;
+    /* background-color: white; */
+    justify-content: flex-start;
+    border-top-left-radius:4px ;
+    border-top-right-radius:28px ;
+    border-bottom-right-radius:4px ;
+    border-bottom-left-radius:4px ;
+}
+.receiver .hover-btn {
+    display: none; /* Initially hide the hover-btn */
+}
+.del,.edit{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.receiver small:hover + .hover-btn {
+    display: inline-block; /* Show the hover-btn when hovering over the small tag */
+}
+.sender .hover-btn-sender {
+    display: none; /* Initially hide the hover-btn-sender */
+}
+
+.sender:hover .hover-btn-sender {
+    display: inline-block; /* Show the hover-btn-sender when hovering over the sender */
+}
+
+
+
+
